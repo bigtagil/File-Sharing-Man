@@ -1,6 +1,6 @@
-# (©)Codexbotz
-# Recode by @mrismanaziz
-# t.me/SharingUserbot & t.me/Lunatic0de
+# Sudah Cukup Sudah
+# Recode by @IWasNotABot
+# t.me/UnlimitedTrusted & t.me/TekanSiniLah
 
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message

@@ -1,6 +1,6 @@
-# (©)Codexbotz
-# Recode by @mrismanaziz
-# t.me/SharingUserbot & t.me/Lunatic0de
+# hurmmm 
+# Recode by itself
+# t.me/TekanSiniLah & t.me/IWasNotABot
 
 import asyncio
 from datetime import datetime
@@ -82,7 +82,6 @@ async def start_command(client: Bot, message: Message):
             await message.reply_text("<b>Telah Terjadi Error </b>🥺")
             return
         await temp_msg.delete()
-
         for msg in messages:
 
             if bool(CUSTOM_CAPTION) & bool(msg.document):
@@ -124,7 +123,8 @@ async def start_command(client: Bot, message: Message):
                 mention=message.from_user.mention,
                 id=message.from_user.id,
             ),
-            reply_markup=InlineKeyboardMarkup(out),
+            
+reply_markup=InlineKeyboardMarkup(out),
             disable_web_page_preview=True,
             quote=True,
         )
@@ -159,7 +159,6 @@ async def get_users(client: Bot, message: Message):
     users = await full_userbase()
     await msg.edit(f"{len(users)} <b>Pengguna menggunakan bot ini</b>")
 
-
 @Bot.on_message(filters.command("broadcast") & filters.user(ADMINS))
 async def send_text(client: Bot, message: Message):
     if message.reply_to_message:
@@ -178,11 +177,11 @@ async def send_text(client: Bot, message: Message):
             chat_id = int(row[0])
             if chat_id not in ADMINS:
                 try:
-                    await broadcast_msg.copy(chat_id)
+                    await broadcast_msg.copy(chat_id, protect_content=PROTECT)
                     successful += 1
                 except FloodWait as e:
                     await asyncio.sleep(e.x)
-                    await broadcast_msg.copy(chat_id)
+                    await broadcast_msg.copy(chat_id, protect_content=PROTECT)
                     successful += 1
                 except UserIsBlocked:
                     blocked += 1

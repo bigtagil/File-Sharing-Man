@@ -1,6 +1,8 @@
-# Credits: @mrismanaziz
-# FROM File-Sharing-Man <https://github.com/mrismanaziz/File-Sharing-Man/>
-# t.me/SharingUserbot & t.me/Lunatic0de
+# Credits: ask yourself why im doing this..
+# becoz u make adjustment and i did not get
+# what i want.. 
+# FROM FileSharingBot <https://github.com/LiGatBest/FileSharingBot/>
+# t.me/UnlimitedTrusted & t.me/TekanSiniLah
 
 from config import FORCE_SUB_CHANNEL, FORCE_SUB_GROUP
 from pyrogram.types import InlineKeyboardButton
@@ -43,7 +45,8 @@ def start_button(client):
                 InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
             ],
             [
-                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
+                
+InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
                 InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink2),
             ],
             [InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close")],
@@ -80,8 +83,9 @@ def fsub_button(client, message):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
-                        url=f"https://t.me/{client.username}?start={message.command[1]}",
+                        text="ᴄuʙᴀ ʟᴀɢɪ",
+                        
+url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
             )
@@ -99,7 +103,7 @@ def fsub_button(client, message):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="ᴄuʙᴀ ʟᴀɢɪ",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
